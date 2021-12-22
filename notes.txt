@@ -1,0 +1,14 @@
+To create multiple environments such as staging, preprod, etc, 
+please check the environment folder
+
+Replacement of these environment is defined in angular.json under
+configuration of build and serve sections. Also, note that the configuration
+of staging, preprod, etc refers to the browserTarget of build configuration
+
+To serve the application (in development machine) under different serve
+configurations, use ng s --configuration=staging
+
+To build the application under different configuration, use
+ng b --configuration=preprod        # production is default for ng b
+
+See Dockerfile for information on related commands
